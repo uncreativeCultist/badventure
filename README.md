@@ -54,4 +54,4 @@ spite is a fork of [spike](https://github.com/RoughCipher/Spike), and thus, inhe
 ## Server side  
 ### Optimizations:  
 - Lobotomizes mobs once they leave (default) entity view distance (~64 blocks)
-- Chunk decoration runs seperate from terrain generation
+- Previously nether-exclusive optimizations are now applied to every dimension
