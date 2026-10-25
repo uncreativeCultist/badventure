@@ -1,7 +1,6 @@
 # Spite 
 because bta pisses me off
 
-# Features:
 ## Server side  
 ### Optimizations:  
 - Lobotomize mobs once they leave (default) entity view distance (~64 blocks)
