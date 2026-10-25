@@ -16,7 +16,8 @@
     "core.fix.lang.LanguageModLangs",
     "core.fix.weather.WeatherChunkLoadEffectSafe",
     "core.fix.worldgen.LeafDecayRadius",
-    "core.optimization.PacketBlockRegionUpdateFast"
+    "core.optimization.PacketBlockRegionUpdateFast",
+    "core.optimization.MobFreeze"
   ],
   "client": [
     "client.fix.auth.AccessTokenLaunchArg",

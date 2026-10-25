@@ -28,7 +28,7 @@ public abstract class RecursiveChunkGen {
 
 	@Unique
 	private boolean spike$isNether() {
-		return this.world != null && this.world.getDimension() == Dimension.NETHER;
+		return true; //think smarter not harder
 	}
 
 	@Inject(method = "<init>", at = @At("RETURN"))
@@ -51,6 +51,9 @@ public abstract class RecursiveChunkGen {
 			opcode = Opcodes.GETFIELD
 		)
 	)
+
+
+
 	private boolean spike$allowRecursiveExceptNether(ChunkProviderServer self, Operation<Boolean> original) {
 		if (spike$isNether()) {
 			return original.call(self);

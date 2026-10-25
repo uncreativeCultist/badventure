@@ -2,17 +2,12 @@
 	"schemaVersion": 1,
 	"id": "spike",
 	"version": "${version}",
-	"name": "Spike",
-	"description": "Spike Mod",
+	"name": "spite",
+	"description": "because bta pisses me off",
 	"authors": [
+		"uncreativeCultist",
 		"RoughCipher"
 	],
-	"contact": {
-		"homepage": "https://github.com/RoughCipher",
-		"sources": "https://github.com/RoughCipher/Spike",
-		"issues": "https://github.com/RoughCipher/Spike/issues",
-		"telegram": "https://t.me/RoughCipher"
-	},
 	"license": "MIT",
 	"environment": "*",
 	"entrypoints": {
