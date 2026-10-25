@@ -1,8 +1,6 @@
 # spite 
 because bta pisses me off
 
----
-
 ## spite features:
 spite is a fork of [spike](https://github.com/RoughCipher/Spike), and thus, inherits all of it's features
 <details>
