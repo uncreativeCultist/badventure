@@ -7,7 +7,8 @@ because bta pisses me off
 - Previously nether-exclusive optimizations are now applied to every dimension
 ### Fixes:
 - Disable "Player moved too fast/wrongly!" (Taken from [I'm Fast](https://modrinth.com/mod/im-fast))  
---- 
+- Fix cannonballs going incredibly fast, getting stuck, and causing lag/console spam
+---
 Spite is a fork of [Spike](https://github.com/RoughCipher/Spike), and thus inherits all of its features.
 <details>
   <summary>Features inherited from Spike:</summary>
