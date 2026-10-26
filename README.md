@@ -13,8 +13,9 @@ Spite is a fork of [Spike](https://github.com/RoughCipher/Spike), and thus inher
 <details>
   <summary>Features inherited from Spike:</summary>
 
-## Both
+## All
 ### Fixes:
+- Cocoa beans are growing again and harvest when fully grown.
 - Languages from mods (any except en_US) are loaded again.
 - Leaf decay radius 4 → 7 + BFS search, fancytree foliage still finds logs after player chunk updates.
 - WeatherChunkLoad (StackOverflowError).
