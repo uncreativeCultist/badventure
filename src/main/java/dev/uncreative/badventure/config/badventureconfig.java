@@ -4,14 +4,15 @@ import dev.uncreative.badventure.badventure;
 import turniplabs.halplibe.util.TomlConfigHandler;
 import turniplabs.halplibe.util.toml.Toml;
 
-public final class SpikeConfig {
+public final class badventureconfig {
 
 	public static boolean spawnChunks = false;
 	public static boolean increaseFoodStacks = true;
 	public static boolean enableEntitySimulationDistance = true;
 	public static int entitySimulationBlocks = 64;
+	public static boolean disableMovementChecks = false;
 
-	private SpikeConfig() {
+	private badventureconfig() {
 	}
 
 	public static void load() {
@@ -42,11 +43,18 @@ public final class SpikeConfig {
 			Distance in blocks before entity AI is disabled""",
 			64
 		);
+		defaults.addEntry(
+			"disable-movement-checks",
+			"""
+			Disables rubber banding the \"Player moved too fast/wrongly!\" messages in the console""",
+			false
+		);
 
 		TomlConfigHandler config = new TomlConfigHandler(badventure.MOD_ID, defaults);
 		spawnChunks = config.getBoolean("spawn-chunks");
 		increaseFoodStacks = config.getBoolean("increase-food-stacks");
 		enableEntitySimulationDistance = config.getBoolean("enable-entity-simulation-distance");
 		entitySimulationBlocks = config.getInt("entity-simulation-blocks");
+		disableMovementChecks = config.getBoolean("disable-movement-checks");
 	}
 }

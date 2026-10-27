@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.Constant;
 import org.spongepowered.asm.mixin.injection.ModifyConstant;
-import dev.uncreative.badventure.config.SpikeConfig;
+import dev.uncreative.badventure.config.badventureconfig;
 
 @Mixin(ChunkProviderServer.class)
 public abstract class SpawnChunkKeepAlive {
@@ -22,7 +22,7 @@ public abstract class SpawnChunkKeepAlive {
 		constant = @Constant(intValue = 128)
 	)
 	private int spike$spawnKeepRadius(int original) {
-		if (!SpikeConfig.spawnChunks) {
+		if (!badventureconfig.spawnChunks) {
 			return 0;
 		}
 		if (this.world.dimension != Dimension.OVERWORLD) {

@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Constant;
 import org.spongepowered.asm.mixin.injection.ModifyConstant;
-import dev.uncreative.badventure.config.SpikeConfig;
+import dev.uncreative.badventure.config.badventureconfig;
 
 @Mixin(MinecraftServer.class)
 public abstract class SpawnAreaPrep {
@@ -18,7 +18,7 @@ public abstract class SpawnAreaPrep {
 		constant = @Constant(intValue = 196)
 	)
 	private int spike$spawnPrepRadius(int original) {
-		return SpikeConfig.spawnChunks ? original : 0;
+		return badventureconfig.spawnChunks ? original : 0;
 	}
 
 	@WrapOperation(
@@ -34,7 +34,7 @@ public abstract class SpawnAreaPrep {
 		boolean defaultValue,
 		Operation<Boolean> original
 	) {
-		if (SpikeConfig.spawnChunks && ("allow-nether".equals(key) || "allow-drift".equals(key))) {
+		if (badventureconfig.spawnChunks && ("allow-nether".equals(key) || "allow-drift".equals(key))) {
 			return false;
 		}
 		return original.call(instance, key, defaultValue);

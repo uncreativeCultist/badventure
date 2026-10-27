@@ -7,18 +7,18 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import dev.uncreative.badventure.config.SpikeConfig;
+import dev.uncreative.badventure.config.badventureconfig;
 
 @Mixin(Mob.class)
 public abstract class MobFreeze {
-    private static final double SLEEPDIST = (SpikeConfig.entitySimulationBlocks * SpikeConfig.entitySimulationBlocks); //squred
+    private static final double SLEEPDIST = (badventureconfig.entitySimulationBlocks * badventureconfig.entitySimulationBlocks); //squred
 
     @Inject(method = "tick", at = @At("HEAD"), cancellable = true)
     private void freezeDistantMobs(CallbackInfo ci) {
         Mob mob = (Mob) (Object) this;
 
         World world = mob.world;
-		if (SpikeConfig.enableEntitySimulationDistance) {
+		if (badventureconfig.enableEntitySimulationDistance) {
 			if (world == null || world.isClientSide) {
 				return;
 			}
