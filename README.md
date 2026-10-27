@@ -1,15 +1,18 @@
-# Spite 
-because bta pisses me off
+# Badventure 
+Makes bad changes to Better Than Adventure!  Previously Spite.
+
 
 ## Server side  
+
+
 ### Optimizations:  
 - Lobotomize mobs once they leave (default) entity view distance (~64 blocks)
-- Previously nether-exclusive optimizations are now applied to every dimension
+- Makes chunk generation consistent across all dimensions (including modded)
 ### Fixes:
 - Disable "Player moved too fast/wrongly!" (Taken from [I'm Fast](https://modrinth.com/mod/im-fast))  
 - Fix cannonballs going incredibly fast, getting stuck, and causing lag/console spam
 ---
-Spite is a fork of [Spike](https://github.com/RoughCipher/Spike), and thus inherits all of its features.
+Badventure is a fork of [Spike](https://github.com/RoughCipher/Spike), and thus inherits all of its features.
 <details>
   <summary>Features inherited from Spike:</summary>
 

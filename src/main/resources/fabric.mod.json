@@ -1,9 +1,9 @@
 {
 	"schemaVersion": 1,
-	"id": "spike",
+	"id": "badventure",
 	"version": "${version}",
-	"name": "spite",
-	"description": "because bta pisses me off",
+	"name": "Badventure",
+	"description": "Makes bad changes to Better Than Adventure!",
 	"authors": [
 		"uncreativeCultist",
 		"RoughCipher"
@@ -12,11 +12,11 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"ru.roughcipher.spike.Spike"
+			"dev.uncreative.badventure.badventure"
 		]
 	},
 	"mixins": [
-		"spike.mixins.json"
+		"badventure.mixins.json"
 	],
 	"depends": {
 		"fabricloader": "*",
