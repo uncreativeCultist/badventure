@@ -18,7 +18,7 @@ public abstract class MobFreeze {
         Mob mob = (Mob) (Object) this;
 
         World world = mob.world;
-		if (SpikeConfig.increaseFoodStacks) {
+		if (SpikeConfig.enableEntitySimulationDistance) {
 			if (world == null || world.isClientSide) {
 				return;
 			}
