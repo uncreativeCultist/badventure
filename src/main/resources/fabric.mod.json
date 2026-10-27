@@ -3,12 +3,14 @@
 	"id": "badventure",
 	"version": "${version}",
 	"name": "Badventure",
-	"description": "Makes bad changes to Better Than Adventure!",
+	"description": "Makes bad changes to Better Than Adventure! for the sake of performance and quality of life.",
 	"authors": [
 		"uncreativeCultist",
-		"RoughCipher"
+		"RoughCipher",
+		"Bielhiss"
 	],
 	"license": "MIT",
+	"icon": "icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
