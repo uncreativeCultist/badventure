@@ -4,12 +4,14 @@ Makes bad changes to Better Than Adventure!  Previously Spite.
 
 ## Server side  
 
+### Features:
+- Increases food stack size (configurable)
 
 ### Optimizations:  
-- Lobotomize mobs once they leave (default) entity view distance (~64 blocks)
-- Makes chunk generation consistent across all dimensions (including modded)
+- Effectively backport simulation distance from newer version (configurable)
+- Makes chunk generation consistent across all dimensions, including modded
 ### Fixes:
-- Disable "Player moved too fast/wrongly!" (Taken from [I'm Fast](https://modrinth.com/mod/im-fast))  
+- Disable "Player moved too fast/wrongly!" (Taken from [I'm Fast](https://modrinth.com/mod/im-fast), configurable)  
 - Fix cannonballs going incredibly fast, getting stuck, and causing lag/console spam
 ---
 Badventure is a fork of [Spike](https://github.com/RoughCipher/Spike), and thus inherits all of its features.
