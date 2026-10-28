@@ -45,7 +45,12 @@ public class FoodStackSize {
 
 		if (badventureconfig.increaseFoodStacks) {
 			if (originalSize > 1) {
-				accessor.setMaxStackSize(Math.min(originalSize * 2, 16));
+				if (originalSize * 2 > 16) {
+					accessor.setMaxStackSize(originalSize);
+				}
+				else {
+					accessor.setMaxStackSize(originalSize * 2);
+				}
 			}
 		}
 	}
